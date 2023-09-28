@@ -16,11 +16,11 @@ labels = {
     6:"PPL",
     7:"SKB",
     8:"TRC",
-    9:"resp"
+    9:"WMO"
 }
 
 def prepare_image(img_path):
-    '''img = load_img(img_path, target_size=(256,256,3))
+    img = load_img(img_path, target_size=(256,256,3))
     img = img_to_array(img)
     img = img/255
     img = np.expand_dims(img, [0])
@@ -31,21 +31,19 @@ def prepare_image(img_path):
     y = int(y)
     res = labels[y]
     print(res)
-    return res.capitalize()'''
-    test_image= cv2.imread(r"D:\skin disease dataset\kaggle archive\archive\IMG_CLASSES\WMO\1_2.jpg")
-    im= tf.constant(test_image, dtype=tf.float32)
-    im= tf.expand_dims(im, axis=0)
+    return res.capitalize()
 
 
 app = Flask(__name__)
 @app.route('/predict', methods=['POST'])
-def inner_image():
+def infer_image():
     if 'file' not in request.files:
-        return jsonify(error = "Please try again. The Image doesn't exist")
+        return jsonify(error="Please try again. The Image doesn't exist")
+
     file = request.files.get('file')
     img_bytes = file.read()
-    img_path = r"D:\skin disease dataset\kaggle archive\archive\IMG_CLASSES\BCC\ISIC_0024331.jpg"
-    with open(img_path,"wb") as img:
+    img_path = "./upload_images/test.jpg"
+    with open(img_path, "wb") as img:
         img.write(img_bytes)
     result = prepare_image(img_path)
     return jsonify(prediction=result)
