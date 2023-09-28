@@ -15,9 +15,9 @@ class ImageUpload(MethodView):
     def imagePreProcess(self, path):
         
         img = Image.open([path])
-        img = img.resize(())  #input size of model
+        img = img.resize(())
         img = np.array(img)
-        img = np.expand_dims(img, axis=0)  #batch dimension
+        img = np.expand_dims(img, axis=0)
         img = preprocess_input(img)
         return img 
     
