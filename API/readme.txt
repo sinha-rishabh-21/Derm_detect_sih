@@ -1,1 +1,5 @@
-this is for latisha and ugantar
+Flask
+python-dotenv
+tensorflow
+numpy
+pillow
