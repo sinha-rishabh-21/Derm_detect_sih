@@ -15,7 +15,7 @@ class ImageUpload(MethodView):
     def imagePreProcess(self, path):
         
         img = Image.open([path])
-        img = img.resize(())
+        img = img.resize((256,256))
         img = np.array(img)
         img = np.expand_dims(img, axis=0)
         img = preprocess_input(img)
