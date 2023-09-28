@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "83016294005",
+    "project_id": "fir-app-e86d9",
+    "storage_bucket": "fir-app-e86d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83016294005:android:e650e171e8a0031ac8e23c",
+        "android_client_info": {
+          "package_name": "com.example.dermdetect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATCKuZTJMuvo_HcQYIoOCeoGSVRx055xk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83016294005:android:a6d48a4c1d48f9d3c8e23c",
+        "android_client_info": {
+          "package_name": "com.example.pqr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATCKuZTJMuvo_HcQYIoOCeoGSVRx055xk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DERM DETECT</string>
+    <string name="upload_your_data">UPLOAD YOUR DATA</string>
+    <string name="enter_your_name">ENTER YOUR NAME</string>
+    <string name="age">AGE</string>
+    <string name="button">NEXT</string>
+    <string name="upload">UPLOAD</string>
+    <string name="click">CLICK</string>
+    <string name="next">NEXT</string>
+</resources>
