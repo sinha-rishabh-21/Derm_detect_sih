@@ -4,7 +4,7 @@ from keras.models import load_model
 from flask import Flask, jsonify, request
 import tensorflow as tf
 
-model = load_model("model_1_usind_dot_save.h5")
+model = load_model("Derm_detect_sih/API/model_1_usind_dot_save.h5")
 
 labels = {
     0:"ADT",
@@ -42,7 +42,7 @@ def infer_image():
 
     file = request.files.get('file')
     img_bytes = file.read()
-    img_path = "./upload_images/test.jpg"
+    img_path = "Derm_detect_sih/upload_images/test.jpg"
     with open(img_path, "wb") as img:
         img.write(img_bytes)
     result = prepare_image(img_path)
