@@ -2,6 +2,7 @@ requests
 beautifulsoup4
 streamlit
 numpy
+pandas
 Pillow
 flask
 keras
